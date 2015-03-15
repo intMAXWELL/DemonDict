@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:padding="16dp"
+        android:background="#ffededed">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout_1">
+            <AutoCompleteTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/tips_1"
+                android:id="@+id/autoCompleteTextView"
+                android:layout_weight="9"
+                android:linksClickable="true"
+                android:textSize="@dimen/abc_text_size_large_material"
+                android:singleLine="true"
+                android:enabled="true" />
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/searchButton1"
+                android:contentDescription=""
+                android:layout_weight="2"
+                android:clickable="true"
+                android:src="@drawable/ic_action_search" />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout_2"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:id="@+id/text_Word"
+            android:textStyle="bold"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textColor="#ff000000"
+            android:textSize="@dimen/abc_text_size_display_1_material"
+  />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/add_to_MyWordList"
+            android:src="@drawable/ic_action_new" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout_3"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout_2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/TTS"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:layout_margin="6dp"
+            android:src="@drawable/ic_action_volume_on" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:id="@+id/text_Phonetic"
+            android:padding="8dp"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_gravity="center"
+            android:textSize="@dimen/abc_text_size_menu_material" />
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout_3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/text_Trans"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/abc_text_size_menu_material"
+            android:background="#ffffffff" />
+    </ScrollView>
+
+</RelativeLayout>
+
